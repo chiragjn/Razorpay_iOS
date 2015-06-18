@@ -1,0 +1,59 @@
+<script src='jquery.min.js'></script>
+<script src='https://checkout.razorpay.com/v1/checkout.js'></script>
+<script>
+function connectWebViewJavascriptBridge(callback) {
+
+    if (window.WebViewJavascriptBridge) {
+        callback(WebViewJavascriptBridge)
+    } else {
+        document.addEventListener('WebViewJavascriptBridgeReady', function() {
+            callback(WebViewJavascriptBridge)
+        }, false)
+    }
+}
+
+connectWebViewJavascriptBridge(function(bridge) {
+
+    var delim = "!#%@$^";
+
+    //DO NOT CHANGE THE ORDER OF ARRAY
+    //key,amount,vendor_name,currency,prefill.name,prefill.phone,prefill.email
+
+    bridge.init(function(message, responseCallback) {
+        if (responseCallback) {
+            responseCallback("In Reply From JavaScript to Swift");
+        }
+        var optionsarray = message.split(delim);
+        var payment_key="";
+        var options = {
+            "key" : optionsarray[0],
+            "amount" : optionsarray[1],
+            "name" : optionsarray[2],
+            "currency" :optionsarray[3],
+            "handler" : function(response){
+                //alert(response.razorpay_payment_id);
+                payment_key = response.razorpay_payment_id; //JUST TO PREVENT SENDING ON MODAL DISMISS BRIDGE MESSAGE
+                bridge.send("2"+delim+response.razorpay_payment_id);
+            },
+            "modal" : {
+                ondismiss: function(){
+                    if(payment_key=="" || payment_key==null || payment_key==undefined)
+                    {
+                        bridge.send("1"+delim+"canceled");
+                    }
+                }
+            },
+            "prefill" : {
+            "name" : optionsarray[4],
+            "contact" : optionsarray[5],
+            "email" : optionsarray[6]
+            }
+        };
+
+        var razorpaydialog = new Razorpay(options);
+        razorpaydialog.open();
+
+    });
+});
+
+</script>

@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46A7004D1B33367100C347DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A7004C1B33367100C347DF /* AppDelegate.swift */; };
+		46A700501B33367100C347DF /* Razorpay_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46A7004E1B33367100C347DF /* Razorpay_iOS.xcdatamodeld */; };
+		46A700571B33367100C347DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A700561B33367100C347DF /* Images.xcassets */; };
+		46A7005A1B33367100C347DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46A700581B33367100C347DF /* LaunchScreen.xib */; };
+		46A700661B33367200C347DF /* Razorpay_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A700651B33367200C347DF /* Razorpay_iOSTests.swift */; };
+		46A700711B3336BE00C347DF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A700701B3336BE00C347DF /* Reachability.swift */; };
+		46A700761B33374200C347DF /* Cart.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46A700721B33374200C347DF /* Cart.xib */; };
+		46A700771B33374200C347DF /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A700731B33374200C347DF /* Cart.swift */; };
+		46A700781B33374200C347DF /* RazorpayCheckout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46A700741B33374200C347DF /* RazorpayCheckout.xib */; };
+		46A700791B33374200C347DF /* RazorpayCheckout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A700751B33374200C347DF /* RazorpayCheckout.swift */; };
+		46A700811B3337DF00C347DF /* razorpay.html in Resources */ = {isa = PBXBuildFile; fileRef = 46A7007B1B3337DF00C347DF /* razorpay.html */; };
+		46A700821B3337DF00C347DF /* jquery.min.map in Sources */ = {isa = PBXBuildFile; fileRef = 46A7007C1B3337DF00C347DF /* jquery.min.map */; };
+		46A700831B3337DF00C347DF /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 46A7007D1B3337DF00C347DF /* jquery.min.js */; };
+		46A700841B3337DF00C347DF /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = 46A7007F1B3337DF00C347DF /* WebViewJavascriptBridge.js.txt */; };
+		46A700851B3337DF00C347DF /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A700801B3337DF00C347DF /* WebViewJavascriptBridge.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46A700601B33367200C347DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46A7003F1B33367100C347DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46A700461B33367100C347DF;
+			remoteInfo = Razorpay_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46A700471B33367100C347DF /* Razorpay_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Razorpay_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A7004B1B33367100C347DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46A7004C1B33367100C347DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46A7004F1B33367100C347DF /* Razorpay_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Razorpay_iOS.xcdatamodel; sourceTree = "<group>"; };
+		46A700561B33367100C347DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		46A700591B33367100C347DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		46A7005F1B33367200C347DF /* Razorpay_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Razorpay_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A700641B33367200C347DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46A700651B33367200C347DF /* Razorpay_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Razorpay_iOSTests.swift; sourceTree = "<group>"; };
+		46A7006F1B3336BE00C347DF /* Razorpay_iOS-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Razorpay_iOS-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		46A700701B3336BE00C347DF /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = ../Reachability/Reachability.swift; sourceTree = "<group>"; };
+		46A700721B33374200C347DF /* Cart.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cart.xib; sourceTree = "<group>"; };
+		46A700731B33374200C347DF /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cart.swift; path = Razorpay_iOS/Cart.swift; sourceTree = SOURCE_ROOT; };
+		46A700741B33374200C347DF /* RazorpayCheckout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RazorpayCheckout.xib; sourceTree = "<group>"; };
+		46A700751B33374200C347DF /* RazorpayCheckout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RazorpayCheckout.swift; sourceTree = "<group>"; };
+		46A7007A1B3337DE00C347DF /* Razorpay_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Razorpay_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		46A7007B1B3337DF00C347DF /* razorpay.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = razorpay.html; path = RazorpayFiles/razorpay.html; sourceTree = "<group>"; };
+		46A7007C1B3337DF00C347DF /* jquery.min.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = jquery.min.map; path = RazorpayFiles/jquery.min.map; sourceTree = "<group>"; };
+		46A7007D1B3337DF00C347DF /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = RazorpayFiles/jquery.min.js; sourceTree = "<group>"; };
+		46A7007E1B3337DF00C347DF /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewJavascriptBridge.h; path = WebViewBridge/WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		46A7007F1B3337DF00C347DF /* WebViewJavascriptBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = WebViewJavascriptBridge.js.txt; path = WebViewBridge/WebViewJavascriptBridge.js.txt; sourceTree = "<group>"; };
+		46A700801B3337DF00C347DF /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewJavascriptBridge.m; path = WebViewBridge/WebViewJavascriptBridge.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46A700441B33367100C347DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A7005C1B33367200C347DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46A7003E1B33367100C347DF = {
+			isa = PBXGroup;
+			children = (
+				46A700861B3337FE00C347DF /* RazorpayFiles */,
+				46A700871B33381000C347DF /* WebViewBridge */,
+				46A700491B33367100C347DF /* Razorpay_iOS */,
+				46A700621B33367200C347DF /* Razorpay_iOSTests */,
+				46A700481B33367100C347DF /* Products */,
+				46A7007A1B3337DE00C347DF /* Razorpay_iOS-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		46A700481B33367100C347DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46A700471B33367100C347DF /* Razorpay_iOS.app */,
+				46A7005F1B33367200C347DF /* Razorpay_iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46A700491B33367100C347DF /* Razorpay_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				46A700721B33374200C347DF /* Cart.xib */,
+				46A700731B33374200C347DF /* Cart.swift */,
+				46A700741B33374200C347DF /* RazorpayCheckout.xib */,
+				46A700751B33374200C347DF /* RazorpayCheckout.swift */,
+				46A7006F1B3336BE00C347DF /* Razorpay_iOS-Bridging-Header.h */,
+				46A700701B3336BE00C347DF /* Reachability.swift */,
+				46A7004C1B33367100C347DF /* AppDelegate.swift */,
+				46A700561B33367100C347DF /* Images.xcassets */,
+				46A700581B33367100C347DF /* LaunchScreen.xib */,
+				46A7004E1B33367100C347DF /* Razorpay_iOS.xcdatamodeld */,
+				46A7004A1B33367100C347DF /* Supporting Files */,
+			);
+			path = Razorpay_iOS;
+			sourceTree = "<group>";
+		};
+		46A7004A1B33367100C347DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46A7004B1B33367100C347DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46A700621B33367200C347DF /* Razorpay_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				46A700651B33367200C347DF /* Razorpay_iOSTests.swift */,
+				46A700631B33367200C347DF /* Supporting Files */,
+			);
+			path = Razorpay_iOSTests;
+			sourceTree = "<group>";
+		};
+		46A700631B33367200C347DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46A700641B33367200C347DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46A700861B3337FE00C347DF /* RazorpayFiles */ = {
+			isa = PBXGroup;
+			children = (
+				46A7007B1B3337DF00C347DF /* razorpay.html */,
+				46A7007C1B3337DF00C347DF /* jquery.min.map */,
+				46A7007D1B3337DF00C347DF /* jquery.min.js */,
+			);
+			name = RazorpayFiles;
+			sourceTree = "<group>";
+		};
+		46A700871B33381000C347DF /* WebViewBridge */ = {
+			isa = PBXGroup;
+			children = (
+				46A7007E1B3337DF00C347DF /* WebViewJavascriptBridge.h */,
+				46A7007F1B3337DF00C347DF /* WebViewJavascriptBridge.js.txt */,
+				46A700801B3337DF00C347DF /* WebViewJavascriptBridge.m */,
+			);
+			name = WebViewBridge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46A700461B33367100C347DF /* Razorpay_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46A700691B33367200C347DF /* Build configuration list for PBXNativeTarget "Razorpay_iOS" */;
+			buildPhases = (
+				46A700431B33367100C347DF /* Sources */,
+				46A700441B33367100C347DF /* Frameworks */,
+				46A700451B33367100C347DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Razorpay_iOS;
+			productName = Razorpay_iOS;
+			productReference = 46A700471B33367100C347DF /* Razorpay_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46A7005E1B33367200C347DF /* Razorpay_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46A7006C1B33367200C347DF /* Build configuration list for PBXNativeTarget "Razorpay_iOSTests" */;
+			buildPhases = (
+				46A7005B1B33367200C347DF /* Sources */,
+				46A7005C1B33367200C347DF /* Frameworks */,
+				46A7005D1B33367200C347DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46A700611B33367200C347DF /* PBXTargetDependency */,
+			);
+			name = Razorpay_iOSTests;
+			productName = Razorpay_iOSTests;
+			productReference = 46A7005F1B33367200C347DF /* Razorpay_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46A7003F1B33367100C347DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Eye2i;
+				TargetAttributes = {
+					46A700461B33367100C347DF = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					46A7005E1B33367200C347DF = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 46A700461B33367100C347DF;
+					};
+				};
+			};
+			buildConfigurationList = 46A700421B33367100C347DF /* Build configuration list for PBXProject "Razorpay_iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46A7003E1B33367100C347DF;
+			productRefGroup = 46A700481B33367100C347DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46A700461B33367100C347DF /* Razorpay_iOS */,
+				46A7005E1B33367200C347DF /* Razorpay_iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46A700451B33367100C347DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A7005A1B33367100C347DF /* LaunchScreen.xib in Resources */,
+				46A700761B33374200C347DF /* Cart.xib in Resources */,
+				46A700571B33367100C347DF /* Images.xcassets in Resources */,
+				46A700781B33374200C347DF /* RazorpayCheckout.xib in Resources */,
+				46A700841B3337DF00C347DF /* WebViewJavascriptBridge.js.txt in Resources */,
+				46A700831B3337DF00C347DF /* jquery.min.js in Resources */,
+				46A700811B3337DF00C347DF /* razorpay.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A7005D1B33367200C347DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46A700431B33367100C347DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A700821B3337DF00C347DF /* jquery.min.map in Sources */,
+				46A7004D1B33367100C347DF /* AppDelegate.swift in Sources */,
+				46A700711B3336BE00C347DF /* Reachability.swift in Sources */,
+				46A700791B33374200C347DF /* RazorpayCheckout.swift in Sources */,
+				46A700501B33367100C347DF /* Razorpay_iOS.xcdatamodeld in Sources */,
+				46A700851B3337DF00C347DF /* WebViewJavascriptBridge.m in Sources */,
+				46A700771B33374200C347DF /* Cart.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A7005B1B33367200C347DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A700661B33367200C347DF /* Razorpay_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46A700611B33367200C347DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46A700461B33367100C347DF /* Razorpay_iOS */;
+			targetProxy = 46A700601B33367200C347DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46A700581B33367100C347DF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46A700591B33367100C347DF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46A700671B33367200C347DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46A700681B33367200C347DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46A7006A1B33367200C347DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Razorpay_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Razorpay_iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46A7006B1B33367200C347DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Razorpay_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Razorpay_iOS-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		46A7006D1B33367200C347DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Razorpay_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Razorpay_iOS.app/Razorpay_iOS";
+			};
+			name = Debug;
+		};
+		46A7006E1B33367200C347DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Razorpay_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Razorpay_iOS.app/Razorpay_iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46A700421B33367100C347DF /* Build configuration list for PBXProject "Razorpay_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A700671B33367200C347DF /* Debug */,
+				46A700681B33367200C347DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46A700691B33367200C347DF /* Build configuration list for PBXNativeTarget "Razorpay_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A7006A1B33367200C347DF /* Debug */,
+				46A7006B1B33367200C347DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46A7006C1B33367200C347DF /* Build configuration list for PBXNativeTarget "Razorpay_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A7006D1B33367200C347DF /* Debug */,
+				46A7006E1B33367200C347DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		46A7004E1B33367100C347DF /* Razorpay_iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				46A7004F1B33367100C347DF /* Razorpay_iOS.xcdatamodel */,
+			);
+			currentVersion = 46A7004F1B33367100C347DF /* Razorpay_iOS.xcdatamodel */;
+			path = Razorpay_iOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 46A7003F1B33367100C347DF /* Project object */;
+}
